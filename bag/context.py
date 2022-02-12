@@ -3,6 +3,11 @@ from django.conf import settings
 
 
 def bag_contents(request):
+    """
+    context processor which make this dictionary
+    available to all templates across the entire
+    application
+    """
 
     bag_items = []
     total = 0
